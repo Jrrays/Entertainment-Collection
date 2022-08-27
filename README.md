@@ -1,5 +1,5 @@
 # Entertainment-Collection
-GUI project done for Programming 4 course with [name_here] during spring 2022.
+GUI project done for Programming 4 course with Uuceppi (https://github.com/Uuceppi) during spring 2022.
 
 This project is a mock-up of a retro game collection and launcher software. This program contains:
 - Main menu window
