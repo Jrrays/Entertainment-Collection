@@ -1,0 +1,58 @@
+﻿<Window x:Class="Ohjelmointi4.GameMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ohjelmointi4"
+        mc:Ignorable="d"
+        Title="EntertainmentCollection" Height="450" Width="720" WindowStartupLocation="CenterScreen" FontFamily="OCR A Extended">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF2D017D" Offset="0"/>
+            <GradientStop Color="#FF2D017D" Offset="1"/>
+            <GradientStop Color="#FFBF00EC" Offset="0.513"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid x:Name="GameWindowGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Border BorderBrush="White" BorderThickness="2" Grid.Column="1" Grid.Row="1" />
+        <ScrollViewer x:Name="GameScroller" Grid.Column="1" Grid.Row="1" Height="330">
+            <Canvas x:Name="GameCanvas" Height="700" >
+                <Button x:Name="Minesweeper" Width="130" Height="100" Canvas.Left="20" Canvas.Top="10" Background="#FF422747" BorderBrush="#FFF9F9F9" Foreground="White" >
+                    <Image Source="images\minesweeper.png" />
+                </Button>
+                <TextBlock Height="30" Width="110" Text="Minesweeper" Canvas.Top="110" Canvas.Left="20" FontSize="16" TextWrapping="Wrap" Foreground="White" />
+                <Button Height="20" Width="20" Canvas.Top="110" Canvas.Left="130" Content="?" FontSize="14"
+                        Background="#FF422747" BorderBrush="#FFF9F9F9" Foreground="White" Click="Button_Click" />
+
+                <Button x:Name="RattlerRace" Width="130" Height="100" Canvas.Right="20" Canvas.Top="10" Background="#FF422747" BorderBrush="#FFF9F9F9" Foreground="White" >
+                    <Image Source="images\rattlerrace.jpg" />
+                </Button>
+                <TextBlock Height="30" Width="110" Text="Rattler Race" Canvas.Top="110" Canvas.Right="40" FontSize="16" FontWeight="Bold" TextWrapping="WrapWithOverflow" Foreground="#FFFFFBFB" />
+                <Button Height="20" Width="20" Canvas.Top="110" Canvas.Right="20" Content="?" FontSize="14"
+                        Background="#FF422747" BorderBrush="#FFF9F9F9" Foreground="White" />
+
+                <Button x:Name="SkiFree" Width="130" Height="100" Canvas.Left="275" Canvas.Top="10" Background="#FF422747" BorderBrush="#FFF9F9F9" Foreground="White">
+                    <Image Source="images\skifree.png" Stretch="Uniform" />
+                </Button>
+                <TextBlock Height="30" Width="110" Text="SkiFree" Canvas.Top="110" Canvas.Left="275" FontSize="16" FontWeight="Bold" Foreground="White" />
+                <Button Height="20" Width="20" Canvas.Top="110" Canvas.Left="385" Content="?" FontSize="14" FontWeight="Bold"
+                        Background="#FF422747" BorderBrush="#FFF9F9F9" Foreground="White" />
+            </Canvas>
+        </ScrollViewer>
+        <Button x:Name="BackButton" Grid.Column="1" Grid.Row="2" Height="30" Width="100" HorizontalAlignment="Left" Margin="0,10,0,0" Content="Back" Click="BackButton_Click" FontSize="25"
+                Background="#FF422747" BorderBrush="#FFF9F9F9" Foreground="White"/>
+    </Grid>
+
+</Window>

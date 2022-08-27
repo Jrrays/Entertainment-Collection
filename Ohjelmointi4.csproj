@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="icons\**" />
+    <EmbeddedResource Remove="icons\**" />
+    <None Remove="icons\**" />
+    <Page Remove="icons\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="background.jpg" />
+    <None Remove="gearicon.png" />
+    <None Remove="images\background.jpg" />
+    <None Remove="images\gearicon.png" />
+    <None Remove="images\gearicongray.png" />
+    <None Remove="images\geariconwhite.png" />
+    <None Remove="images\minesweeper.png" />
+    <None Remove="images\rattlerrace.jpg" />
+    <None Remove="images\skifree.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\gearicongray.png" />
+    <Resource Include="images\minesweeper.png" />
+    <Resource Include="images\rattlerrace.jpg" />
+    <Resource Include="images\skifree.png" />
+  </ItemGroup>
+
+</Project>

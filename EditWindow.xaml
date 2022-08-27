@@ -1,0 +1,34 @@
+﻿<Window x:Class="Ohjelmointi4.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ohjelmointi4"
+        mc:Ignorable="d" FontSize="20" FontFamily="OCR A Extended"
+        Height="180" Width="350" WindowStartupLocation="CenterScreen" Background="#FFE2E2E2" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="20,0,20,0" Text="Rename profile "/>
+        <TextBox Grid.Column="1" Grid.Row="2" Width="265" Margin="20,0,0,0" MaxLength="9" />
+        <TextBlock Grid.Column="1" Grid.Row="3" Margin="20,0,20,0" Text="Max 9 characters"/>
+        <Button x:Name="OkButton" Grid.Column="1" Grid.Row="4" Margin="20,10,0,0" Width="40" Height="25"
+                Content="Ok" HorizontalAlignment="Left" />
+        <Button x:Name="CancelButton" Grid.Column="1" Grid.Row="4" Margin="80,10,0,0" Width="75" Height="25"
+                Content="Cancel" HorizontalAlignment="Left" Click="CancelButton_Click" />
+
+    </Grid>
+</Window>
+
